@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">Koala Fix </h1>
+
+  <p id="description">
+    Gracias por tomarse el tiempo de ayudarnos a mejorar nuestros servicios.
+  </p>
+
+  <form action="" id="survey-form" class="form-body">
+    <div class="form-group">
+      <label class="label" id="name-label" for="name">Nombre</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Ingresar nombre"
+          required
+        />
+    </div>
+
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          email="email"
+          id="email"
+          class="form-control"
+          placeholder="Ingresar email"
+          required
+        />
+    </div>
+
+    <div class="form-group">
+      <label id="number-label" for="number">Edad (opcional)</label>
+        <input
+          type="number"
+          number="numer"
+          id="number"
+          min="10"
+          max="130"
+          class="form-control"
+          placeholder="Edad"
+        />
+    </div>
+
+    <div class="form-group">
+      <p>¿Quién es mejor?</p>
+      <select id="dropdown" name="personal" class="form-control" required>
+        <option selected value>Selecciona al personal</option>
+        <option value="student">Gabo</option>
+        <option value="job">Mau</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>¿Recomendarías nuestros servicios?</p>
+      <label class="input-radio-label">
+        <input
+          name="user-recommend"
+          value="definitivamente"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitivamente</label
+      >
+      <label class="input-radio-label">
+        <input
+          name="user-recommend"
+          value="quizas"
+          type="radio"
+          class="input-radio"
+        />Quizás</label
+      >
+      <label class="input-radio-label">
+        <input
+          name="user-recommend"
+          value="nunca"
+          type="radio"
+          class="input-radio"
+        />Nunca</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>¿Cuáles servicios has solicitado?</p>
+      <label class="input-checkbox-label">
+        <input
+          name="servicios"
+          value="cambio-pantalla"
+          type="checkbox"
+          class="input-checkbox"
+        />Cambio de pantalla</label
+      >
+      <label class="input-checkbox-label">
+        <input
+          name="servicios"
+          value="cambio-bateria"
+          type="checkbox"
+          class="input-checkbox"
+        />Cambio de batería</label
+      >
+      <label class="input-checkbox-label"
+        ><input
+          name="servicios"
+          value="cambio-carga"
+          type="checkbox"
+          class="input-checkbox"
+        />Puerto de carga</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>¿Algún comentario o sugerencia?</p>
+      <textarea
+        id="commentario"
+        class="input-textarea"
+        name="comentario"
+        placeholder="Escribe tu comentario aquí..."
+      ></textarea>
+
+      <div class="form-group-enviar">
+        <button type="submit" id="submit" class="enviar-boton">
+          Enviar
+        </button>
+      </div>
+    </div>
+  </form>
+
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>  
+</body>
+</html>
